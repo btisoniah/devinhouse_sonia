@@ -1,0 +1,19 @@
+.btn {
+
+  font: bold 12px Arial, Helvetica, sans-serif;
+  font-style: normal;
+  color: black;
+  background: #f5ebf5;
+  border: 0px solid #ffffff;
+  box-shadow: 2px 2px 8px #000000;
+  display: inline-block;
+  font-size: 16px;
+  margin: auto;
+  padding: 10px;
+  text-decoration: none;
+  text-shadow: #000000 5px 5px 15px;
+}
+
+body {
+  background-color: lightskyblue;
+}

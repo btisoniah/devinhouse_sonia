@@ -1,0 +1,99 @@
+h1 {
+  font-family: Verdana;
+  size: 20;
+  color: brown;
+  text-align: center;
+  background-image: url(imagens/fundo.jpg);
+  background-repeat: none;
+}
+
+p {
+  font-size: 14px;
+  text-align: center;
+}
+
+body {
+  background-color: lightskyblue;
+}
+
+.button {
+  width: 18%;
+  padding: 10px;
+  border: 2px solid black;
+  margin-top: 20px;
+  border-radius: 25px;
+  margin: 0 auto;
+
+}
+
+.resumo {
+  text-decoration: indigo;
+  font-size: large;
+  font-size: 16;
+  color: darkmagenta;
+}
+
+.centralizar {
+  text-align: center;
+  position: relative;
+}
+
+/* alinhamento das imagens */
+.column {
+  box-sizing: border-box;
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width:500px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* The navigation bar */
+.navbar {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow: hidden;
+  background-color: royalblue;
+  position: fixed;
+  /* Set the navbar to fixed position */
+  top: 0;
+  /* Position the navbar at the top of the page */
+  width: 100%;
+  /* Full width */
+  font-size: 25;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: center;
+  display: inline;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 18px;
+  text-decoration: chartreuse
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: mediumblue;
+  color: mediumturquoise;
+  transition-duration: 300ms;
+}
+
+.footer {
+  font-style: italic;
+  clear: both;
+  position: relative;
+  height: 80px;
+  margin-top: 0px;
+}

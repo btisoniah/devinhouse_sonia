@@ -1,0 +1,55 @@
+<html>
+<header>
+   <title>Calculadora</title>
+   <script type="text/javascript">
+      function somarValores() {
+         var n1 = document.getElementById("s1").value;
+         var n2 = document.getElementById("s2").value;
+         var n3 = parseInt(n1) + parseInt(n2);
+         var name = document.getElementById("name").value;
+         alert("Olá " + name + ', o resultado é: ' + n3);
+      }
+
+      function multiplicarValores() {
+         var n1 = document.getElementById("s1").value;
+         var n2 = document.getElementById("s2").value;
+         var n3 = parseInt(n1) * parseInt(n2);
+         var name = document.getElementById("name").value;
+         alert("Olá " + name + ', o resultado é: ' + n3);
+      }
+
+      function dividirValores() {
+         var n1 = document.getElementById("s1").value;
+         var n2 = document.getElementById("s2").value;
+         var n3 = parseInt(n1) / parseInt(n2);
+         var name = document.getElementById("name").value;
+         alert("Olá " + name + ', o resultado é: ' + n3);
+      }
+
+      function subtrairValores() {
+         var n1 = document.getElementById("s1").value;
+         var n2 = document.getElementById("s2").value;
+         var n3 = parseInt(n1) - parseInt(n2);
+         var name = document.getElementById("name").value;
+         alert("Olá " + name + ', o resultado é: ' + n3);
+      }
+   </script>
+</header>
+
+<body>
+   Eu fiz essa calculadora básica pra aprender os códigos... <br><br>
+   <legend></legend>
+   <label>Nome:</label>
+   <input id="name" type="text" />
+   <label>Valor 1:</label>
+   <input id="s1" type="text" />
+   <label>Valor 2:</label>
+   <input id="s2" type="text" />
+   <button id="somar" onclick="somarValores()">Somar</button>
+   <button id="multiplicar" onclick="multiplicarValores()">multiplicar</button>
+   <button id="dividir" onclick="dividirValores()">dividir</button>
+   <button id="subtrair" onclick="subtrairValores()">subtrair</button>
+</body>
+</body>
+
+</html>
