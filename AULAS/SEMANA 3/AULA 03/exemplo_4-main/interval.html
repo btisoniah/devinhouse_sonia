@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <nav>
+        <img id="logo" src="https://www.datacenterknowledge.com/sites/datacenterknowledge.com/files/wp-content/uploads/2013/04/linux-tux.png" alt="Tux" />
+        <div>
+            <a href="home.html">Home</a>
+            <a href="interval.html">Interval</a>
+        </div>
+    </nav>
+    <main>
+        <h3>Função Interval</h3>
+        <hr />
+        <br>
+        <div class="alinhamento-vertical">
+            Função setInterval(): funciona de uma maneira muito similar à setTimeout(), exceto que a função que você passar como primeiro parâmetro é executada repetidamente em não menos que um número determinado de milissegundos dado no segundo parâmetro, ao invés
+            de apenas uma vez. Você também pode passar qualquer parâmetro sendo executado como um parâmetro subsequente da chamada de setInterval(). </div>
+        <div class="alinhamento">
+            <p class="clock"></p>
+            <button id="btnLimpar" onclick="funcClearInterval()">Limpar contador</button>
+            <script>
+                function displayTime() {
+                    let date = new Date();
+                    let time = date.toLocaleTimeString();
+                    document.querySelector('.clock').textContent = time;
+                }
+
+                displayTime();
+                var createClock = setInterval(displayTime, 1000);
+
+                function funcClearInterval() {
+                    clearInterval(createClock);
+                }
+            </script>
+            <main>
+                <footer></footer>
+</body>
+
+</html>

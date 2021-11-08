@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM - getElementById</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <nav>
+        <img id="logo"
+            src="https://www.datacenterknowledge.com/sites/datacenterknowledge.com/files/wp-content/uploads/2013/04/linux-tux.png"
+            alt="Tux" />
+        <div>
+            <a href="home.html">Home</a>
+        </div>
+    </nav>
+    <main>
+        <h1>Semana 3 - DOM: getElementById</h1>
+       
+        <div class="alinhamento-vertical">
+            <div class="container">
+                <form action="resultado.html" class="form" id="form">
+
+<!-- //https://www.w3schools.com/html/html_form_input_types.asp tipos de inputs -->
+
+                    <div class="form-parts"> 
+                        <label for="nome"> Nome: </label> <br> 
+                        <input type="text" id="nome" placeholder="escreva seu nome" required>
+                        <i class="fa fa-exclamation-circle"></i> 
+                        <i class="fa fa-check-circle"></i> 
+                        <small> error mssg </small>
+                    </div>
+
+                    <div class="form-parts"> 
+                        <label for="email"> E-mail: </label> <br> 
+                        <input type="email" id="email" placeholder="e-mail" required>
+                        <i class="fa fa-exclamation-circle"></i> 
+                        <i class="fa fa-check-circle"></i> 
+                        <small> error mssg </small>
+                    </div>
+
+                    <div class="form-parts"> 
+                        <label for="senha"> Senha: </label> <br> 
+                        <input type="password" id="senha" placeholder="senha" required>
+                        <i class="fa fa-exclamation-circle"></i> 
+                        <i class="fa fa-check-circle"></i> 
+                        <small> error mssg </small>
+                    </div>
+
+                    <div class="form-parts"> 
+                        <label for="senha"> Confirme a Senha: </label> <br> 
+                        <input type="password" id="confirmaSenha" placeholder="confirme senha" required>
+                        <i class="fa fa-exclamation-circle"></i> 
+                        <i class="fa fa-check-circle"></i> 
+                        <small> error mssg </small>
+                    </div>
+                    <button id="btnEnviar"> Enviar </button>
+                    </form>
+
+
+
+            </div>
+        </div>
+        <br>
+    </main>
+    <footer></footer>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

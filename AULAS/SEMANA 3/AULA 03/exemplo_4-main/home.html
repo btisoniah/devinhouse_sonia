@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <nav>
+        <img id="logo" src="https://www.datacenterknowledge.com/sites/datacenterknowledge.com/files/wp-content/uploads/2013/04/linux-tux.png" alt="Tux" />
+        <div>
+            <a href="home.html">Home</a>
+            <a href="interval.html">Interval</a>
+        </div>
+    </nav>
+    <main>
+        <h3>Função Timeout</h3>
+        <hr />
+        <br>
+        <div class="alinhamento-vertical">
+            Função timeout(): executa um bloco de código particular depois que um determinado período de tempo passou.
+            <br/> número representando o intervalo de tempo em milissegundos (1000 milissegundos equivalem a 1 segundo) para esperar antes de executar o código. Se você especificar um valor de 0 (ou simplesmente omitir o valor), a função será executada
+            assim que possível (mas não imediatamente).
+            <br/>
+            <br/> Função clearTimeout(): é o método limpa um temporizador ajustado com o setTimeout() método.<br/> O valor ID retornado por setTimeout() é utilizada como o parâmetro para o clearTimeout() método.
+        </div>
+        <div class="alinhamento">
+
+            <button onclick="inicioContador()">Start count!</button>
+            <input type="text" id="txt">
+            <button onclick="paraContador()">Stop count!</button>
+            <main>
+                <footer></footer>
+                <script src="scripts/script.js"></script>
+</body>
+
+</html>
